@@ -1,0 +1,14 @@
+<div class="container">
+    <mat-card class="card">
+      <img mat-card-image [src]="watches[currentWatch].pic" alt="Watch">
+      <mat-card-content>
+        <mat-form-field appearance="fill">
+          <mat-label>Guess the price</mat-label>
+          <input matInput [(ngModel)]="price">
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="nextWatch()">Next</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>

@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, Inject, OnInit, inject } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
+import { Watches } from './watches';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -10,4 +15,5 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'watches-quiz';
+  
 }

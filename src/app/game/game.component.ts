@@ -34,6 +34,7 @@ export class GameComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.gameService.resetGame();
     this.watches = this.gameService.getWatches();
     this.guesses = this.gameService.getGuesses();
   }

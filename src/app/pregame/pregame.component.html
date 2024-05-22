@@ -1,0 +1,12 @@
+<div class="container" style="flex-direction: column;">
+    <h1>Rules:</h1>
+    <p>You will see a picture of the watches.</p>
+    <p>Your aim is to guess the price of the watches.</p>
+    <p>The main score metric is the digits difference between the actual price and your guess.</p>
+    <p>For example, if the actual price is 5000 and you guess 2000, the difference is 0 (correct guess), and if you guess 900, the
+        difference is 1.</p>
+    <p>Additionally, the absolute difference in euros will be shown but won't affect the rank.</p>
+    <p>There are {{ watchesCount }} watches in total, from €{{ minPrice }} to €{{maxPrice }}</p>
+    <p>Good luck!</p>
+    <a routerLink="/game">Play</a>
+</div>

@@ -1,0 +1,15 @@
+<div class="container" style="flex-direction: column;">
+    @for (watch of watches; track $index) {
+    <div class="card">
+        <h1>Watch {{ $index + 1 }}</h1>
+        <img [src]="watch.pic" alt="{{watch.model}}">
+        <div class="watch-info">
+            <h2>{{watch.brand}}</h2>
+            <p>{{watch.model}}</p>
+            <p>Price: €{{watch.price}}</p>
+            <p style="color: red;">Your answer: €{{guesses[$index]}}</p>
+            <a [href]="watch.link" target="_blank">Buy Now</a>
+        </div>
+    </div>
+    }
+</div>

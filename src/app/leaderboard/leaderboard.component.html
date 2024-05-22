@@ -1,17 +1,7 @@
 <div class="container" style="flex-direction: column;">
-    <p>You scored {{ score }}</p>
+    <p>You scored {{ rankScore }} (absolute error {{ absoluteScore }}) with {{ correctGuesses }}/{{ watches.length }}
+        degree-correct guesses</p>
     <p>Your rank is {{ rank }}</p>
     <p>{{ description }}</p>
-    <a routerLink="/game">Play again</a>
-    @for (watch of watches; track $index) {
-    <div class="card">
-        <img [src]="watch.pic" alt="{{watch.model}}">
-        <div class="watch-info">
-            <h2>{{watch.brand}}</h2>
-            <p>{{watch.model}}</p>
-            <p>Price: €{{watch.price}}</p>
-            <a [href]="watch.link" target="_blank">Buy Now</a>
-        </div>
-    </div>
-    }
+    <a routerLink="/game">Play again</a><a routerLink="/answers">See answers</a>
 </div>

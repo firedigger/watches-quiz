@@ -35,11 +35,11 @@ export class LeaderboardComponent implements OnInit {
     }
     else if (this.rankScore < 1) {
       this.rank = 'Alex';
-      this.description = '';
+      this.description = 'You might not hold a deep appreciation for the intricacies of luxury timepieces, yet you also steer clear of acquiring blatant counterfeit models. Well done!';
     }
     else {
       this.rank = 'Ivan';
-      this.description = 'You need to learn more about watches!';
+      this.description = 'Ah, comrade, you love those fake luxury watches, yes? Any smart man can see they are knock-offs. You can\'t tell real from fake, such a shame! Why not learn to spot the real deal?';
     }
   }
 }

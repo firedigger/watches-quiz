@@ -1,7 +1,8 @@
 <div class="container" style="flex-direction: column;">
-    <p>You scored {{ rankScore }} (absolute error {{ absoluteScore }}) with {{ correctGuesses }}/{{ watches.length }}
+    <p>You scored <b>{{ rankScore | number: '1.2-2' }}</b> (absolute error {{ absoluteScore | number: '1.2-2' }}) with
+        {{ correctGuesses }}/{{ watches.length }}
         degree-correct guesses</p>
-    <p>Your rank is {{ rank }}</p>
+    <p>Your rank is <b>{{ rank }}</b></p>
     <p>{{ description }}</p>
     <a routerLink="/game">Play again</a><a routerLink="/answers">See answers</a>
 </div>

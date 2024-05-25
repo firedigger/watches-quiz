@@ -1,3 +1,0 @@
-Add questions (per each degree - 10, 100, 1000, 10000), target number is 15-20
-Blur out brand from pictures
-Shuffle the list

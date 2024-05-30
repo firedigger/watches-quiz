@@ -6,7 +6,7 @@
         <div class="watch-info">
             <h2>{{watch.brand}}</h2>
             <p>{{watch.model}}</p>
-            <p>Price: <b>€{{watch.price | number }}</b></p>
+            <p>Price: <b>€{{ watch.price | number }}</b></p>
             <p
                 [ngClass]="{'correct': countDigits(guesses[$index]) === countDigits(watch.price), 'incorrect': countDigits(guesses[$index]) !== countDigits(watch.price)}">
                 Your answer: €{{ guesses[$index] | number}}
@@ -15,4 +15,5 @@
         </div>
     </div>
     }
+    <a routerLink="/leaderboard">Back</a>
 </div>

@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { GameService } from '../game.service';
 import { CommonModule } from '@angular/common';
 import { countDigits } from '../helpers';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-answers',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './answers.component.html',
   styleUrl: './answers.component.scss'
 })
